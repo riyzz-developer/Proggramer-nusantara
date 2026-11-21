@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programmer Nusantara | PN — Memahami Programmer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand-link">
+        <img
+          src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+          alt="Programmer Nusantara"
+          class="pn-logo-mark"
+        />
+        <span class="brand-name">Programmer Nusantara <small>| PN</small></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#memahami" data-i18n="nav_understand">Memahami Programmer</a>
+        <a href="#alur" data-i18n="nav_flow">Alur Grup</a>
+        <a href="#tools" data-i18n="nav_tools">Tools Kerja</a>
+        <a href="#manfaat" data-i18n="nav_benefits">Manfaat</a>
+        <a href="#kanal" data-i18n="nav_channels">TikTok &amp; Kanal</a>
+        <a href="#aturan" data-i18n="nav_rules">Aturan</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button type="button" id="langToggle" class="btn-outline" aria-label="Switch Language">
+          <span id="langLabel">EN</span>
+        </button>
+
+        <a
+          href="https://chat.whatsapp.com/DOf8COYiTJu2BaARbvCs6g?s=cl&p=a&iam=2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-solid"
+        >
+          <span data-i18n="join_short">Gabung</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-box">
+        <div class="hero-logo-wrap reveal-text">
+          <img
+            src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+            alt="Logo Programmer Nusantara"
+            class="pn-logo-mark pn-logo-hero-size"
+          />
+        </div>
+
+        <div class="pill reveal-text" data-i18n="hero_pill">
+          PROGRAMMER NUSANTARA | PN
+        </div>
+
+        <h1 class="reveal-text" data-i18n="hero_title">
+          Memahami Programmer. Ruang Diskusi Jujur untuk Sesama Builder.
+        </h1>
+
+        <p class="hero-lead reveal-text" data-i18n="hero_lead">
+          Menjadi programmer bukan cuma soal menulis baris kode yang jalan, tapi tentang memahami cara berpikir, menghadapi kebuntuan, menghargai proses, dan saling dukung tanpa ego.
+        </p>
+
+        <div class="hero-btns reveal-text">
+          <a
+            href="https://chat.whatsapp.com/DOf8COYiTJu2BaARbvCs6g?s=cl&p=a&iam=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-solid btn-lg"
+          >
+            <span data-i18n="join_wa">Gabung Grup WhatsApp</span>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M13 5l7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="https://tiktok.com/@proggramer.nusantara"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-outline btn-lg"
+          >
+            <span data-i18n="visit_tiktok">TikTok @proggramer.nusantara</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BALOK SCROLL + TEKS: MEMAHAMI PROGRAMMER -->
+    <section id="memahami" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="u_eye">MEMAHAMI PROGRAMMER</div>
+          <h2 class="reveal-text" data-i18n="u_title">Apa yang Sering Tidak Terlihat dari Seorang Programmer</h2>
+          <p class="reveal-text" data-i18n="u_sub">
+            Di balik satu fitur sederhana atau satu halaman web yang rapi, ada jam terbang membaca log, menguji hipotesis, dan merapikan ulang logika.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="scroll-block glass-card">
+            <div class="block-tag">BLOCK 01</div>
+            <h3 class="reveal-text" data-i18n="u1_t">Debug Itu Bagian dari Proses</h3>
+            <p class="reveal-text" data-i18n="u1_d">
+              Error bukan tanda gagal. Menemukan satu bug kecil sering membutuhkan pemahaman menyeluruh terhadap alur data dan state aplikasi.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card">
+            <div class="block-tag">BLOCK 02</div>
+            <h3 class="reveal-text" data-i18n="u2_t">Fokus Butuh Ketertiban</h3>
+            <p class="reveal-text" data-i18n="u2_d">
+              Programmer sering bekerja dalam mode mendalam. Obrolan yang terlalu ramai oleh spam atau gangguan membuat diskusi teknis kehilangan arah.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card">
+            <div class="block-tag">BLOCK 03</div>
+            <h3 class="reveal-text" data-i18n="u3_t">Setiap Level Punya Tantangan</h3>
+            <p class="reveal-text" data-i18n="u3_d">
+              Pemula bergulat dengan dasar logika dan sintaks; yang lebih berpengalaman bergulat dengan performa, keamanan, arsitektur, dan maintainability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BALOK SCROLL + TEKS: ALUR GRUP -->
+    <section id="alur" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="f_eye">ALUR KERJA KOMUNITAS</div>
+          <h2 class="reveal-text" data-i18n="f_title">Alur Utama di Programmer Nusantara</h2>
+          <p class="reveal-text" data-i18n="f_sub">
+            Alur yang jelas membantu setiap anggota mendapatkan jawaban yang relevan dan menjaga suasana grup tetap sehat.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="scroll-block glass-card flow-box">
+            <span class="num-pill">01</span>
+            <h3 class="reveal-text" data-i18n="f1_t">Pahami Aturan</h3>
+            <p class="reveal-text" data-i18n="f1_d">
+              Kenali batas promosi harian, larangan spam, aturan AI, serta larangan transaksi mencurigakan sejak awal.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card flow-box">
+            <span class="num-pill">02</span>
+            <h3 class="reveal-text" data-i18n="f2_t">Jelaskan Konteks</h3>
+            <p class="reveal-text" data-i18n="f2_d">
+              Saat bertanya, tulis tujuan, stack/bahasa, potongan kode penting, dan pesan error secara runtut.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card flow-box">
+            <span class="num-pill">03</span>
+            <h3 class="reveal-text" data-i18n="f3_t">Diskusi Terbuka</h3>
+            <p class="reveal-text" data-i18n="f3_d">
+              Bandingkan beberapa solusi, pahami alasannya, dan pilih pendekatan paling masuk akal untuk kasusmu.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card flow-box">
+            <span class="num-pill">04</span>
+            <h3 class="reveal-text" data-i18n="f4_t">Eksekusi &amp; Berbagi</h3>
+            <p class="reveal-text" data-i18n="f4_d">
+              Uji langsung di proyekmu, bagikan pelajaran yang didapat, dan bantu sesama anggota yang sedang bertanya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS & BAHASA KERJA PROGRAMMER -->
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="t_eye">STACK &amp; PERKAKAS KITA BEKERJA</div>
+          <h2 class="reveal-text" data-i18n="t_title">Bahasa &amp; Tools yang Sering Dipakai</h2>
+          <p class="reveal-text" data-i18n="t_sub">
+            Dari bahasa pemrograman hingga perkakas sehari-hari saat menulis, menguji, dan menjalankan kode.
+          </p>
+        </div>
+
+        <div class="filter-bar reveal-text" role="tablist" aria-label="Filter Tools">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter_all">Semua Tools</button>
+          <button type="button" class="filter-btn" data-filter="lang" data-i18n="filter_lang">Bahasa &amp; Web</button>
+          <button type="button" class="filter-btn" data-filter="workflow" data-i18n="filter_work">Tools &amp; Workflow Kerja</button>
+        </div>
+
+        <div class="grid-4 tools-grid">
+          <!-- Python -->
+          <div class="scroll-block glass-card tool-card" data-category="lang">
+            <div class="tool-top">
+              <span class="tool-code">PY</span>
+              <span class="tool-cat" data-i18n="cat_lang">Bahasa</span>
+            </div>
+            <h3 class="reveal-text">Python</h3>
+            <p class="reveal-text" data-i18n="t_py">
+              Skrip otomasi, backend, pengolahan data, API, hingga pengujian logika cepat dan bersih.
+            </p>
+          </div>
+
+          <!-- HTML & CSS -->
+          <div class="scroll-block glass-card tool-card" data-category="lang">
+            <div class="tool-top">
+              <span class="tool-code">HTML/CSS</span>
+              <span class="tool-cat" data-i18n="cat_web">Web UI</span>
+            </div>
+            <h3 class="reveal-text">HTML &amp; CSS</h3>
+            <p class="reveal-text" data-i18n="t_html">
+              Struktur semantik halaman, tata letak responsif grid/flex, tipografi, dan gaya antarmuka modern.
+            </p>
+          </div>
+
+          <!-- C++ -->
+          <div class="scroll-block glass-card tool-card" data-category="lang">
+            <div class="tool-top">
+              <span class="tool-code">C++</span>
+              <span class="tool-cat" data-i18n="cat_sys">Sistem &amp; Performa</span>
+            </div>
+            <h3 class="reveal-text">C++</h3>
+            <p class="reveal-text" data-i18n="t_cpp">
+              Pemrograman berkinerja tinggi, manajemen memori, algoritma/struktur data, dan aplikasi sistem.
+            </p>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="scroll-block glass-card tool-card" data-category="lang">
+            <div class="tool-top">
+              <span class="tool-code">JS</span>
+              <span class="tool-cat" data-i18n="cat_web">Web &amp; Runtime</span>
+            </div>
+            <h3 class="reveal-text">JavaScript</h3>
+            <p class="reveal-text" data-i18n="t_js">
+              Interaktivitas browser, manipulasi DOM, logika asinkron, hingga pengembangan aplikasi web dan backend.
+            </p>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="scroll-block glass-card tool-card" data-category="workflow">
+            <div class="tool-top">
+              <span class="tool-code">GIT</span>
+              <span class="tool-cat" data-i18n="cat_work">Workflow</span>
+            </div>
+            <h3 class="reveal-text">Git &amp; GitHub</h3>
+            <p class="reveal-text" data-i18n="t_git">
+              Version control, histori perubahan kode, branching, kolaborasi repository, dan pelacakan revisi.
+            </p>
+          </div>
+
+          <!-- Terminal & Linux -->
+          <div class="scroll-block glass-card tool-card" data-category="workflow">
+            <div class="tool-top">
+              <span class="tool-code">CLI / LINUX</span>
+              <span class="tool-cat" data-i18n="cat_work">Workflow</span>
+            </div>
+            <h3 class="reveal-text">Terminal &amp; Linux</h3>
+            <p class="reveal-text" data-i18n="t_cli">
+              Navigasi file, kompilasi kode, manajemen proses, environment, dan eksekusi perintah harian.
+            </p>
+          </div>
+
+          <!-- Code Editor & Debugger -->
+          <div class="scroll-block glass-card tool-card" data-category="workflow">
+            <div class="tool-top">
+              <span class="tool-code">IDE / DEVTOOLS</span>
+              <span class="tool-cat" data-i18n="cat_work">Workflow</span>
+            </div>
+            <h3 class="reveal-text">Editor &amp; DevTools</h3>
+            <p class="reveal-text" data-i18n="t_ide">
+              Menulis kode, inspeksi elemen/jaringan, membaca stack trace, dan melacak bug langkah demi langkah.
+            </p>
+          </div>
+
+          <!-- Database, API & Container -->
+          <div class="scroll-block glass-card tool-card" data-category="workflow">
+            <div class="tool-top">
+              <span class="tool-code">SQL / API / DOCKER</span>
+              <span class="tool-cat" data-i18n="cat_work">Workflow</span>
+            </div>
+            <h3 class="reveal-text">Database, API &amp; Container</h3>
+            <p class="reveal-text" data-i18n="t_db">
+              Penyimpanan data terstruktur, pertukaran data REST/JSON, serta isolasi lingkungan aplikasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BALOK SCROLL + TEKS: MANFAAT -->
+    <section id="manfaat" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="m_eye">MANFAAT GRUP</div>
+          <h2 class="reveal-text" data-i18n="m_title">Apa yang Kamu Dapatkan di PN</h2>
+          <p class="reveal-text" data-i18n="m_sub">
+            Ruang belajar dan berjejaring yang praktis untuk menunjang keseharianmu sebagai programmer.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="scroll-block glass-card benefit-box">
+            <div class="ico-box">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="reveal-text" data-i18n="m1_t">Bedah Bug &amp; Logika Kode</h3>
+              <p class="reveal-text" data-i18n="m1_d">
+                Cepat menemukan titik buta saat kode tidak berjalan sesuai harapan, baik di frontend, backend, mobile, maupun script otomasi.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card benefit-box">
+            <div class="ico-box">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="reveal-text" data-i18n="m2_t">Referensi Tools, Library &amp; Workflow</h3>
+              <p class="reveal-text" data-i18n="m2_d">
+                Belajar memilih tools yang tepat guna alih-alih ikut-ikutan hype tanpa memahami kebutuhan proyek.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card benefit-box">
+            <div class="ico-box">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="reveal-text" data-i18n="m3_t">Teman Diskusi &amp; Kolaborasi</h3>
+              <p class="reveal-text" data-i18n="m3_d">
+                Terhubung dengan sesama programmer yang punya minat serupa untuk diskusi proyek, belajar bersama, atau bertukar pengalaman.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card benefit-box">
+            <div class="ico-box">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="reveal-text" data-i18n="m4_t">Ruang Lebih Tertib &amp; Minim Drama</h3>
+              <p class="reveal-text" data-i18n="m4_d">
+                Aturan tegas membantu menjaga kualitas percakapan agar anggota tetap nyaman berdiskusi setiap hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANAL RESMI: TIKTOK & WHATSAPP -->
+    <section id="kanal" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="c_eye">JEJARING &amp; KONTEN</div>
+          <h2 class="reveal-text" data-i18n="c_title">Kanal Resmi Programmer Nusantara</h2>
+          <p class="reveal-text" data-i18n="c_sub">
+            Ikuti konten singkat seputar dunia programmer di TikTok dan bergabung ke ruang diskusi utama di WhatsApp.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="scroll-block glass-card channel-box">
+            <div class="channel-top">
+              <img
+                src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+                alt="PN TikTok"
+                class="pn-logo-mark"
+              />
+              <span class="channel-tag">TIKTOK</span>
+            </div>
+            <h3 class="reveal-text">@proggramer.nusantara</h3>
+            <p class="reveal-text" data-i18n="c1_d">
+              Catatan singkat, sudut pandang keseharian programmer, mindset ngoding, dan informasi seputar komunitas.
+            </p>
+            <a
+              href="https://tiktok.com/@proggramer.nusantara"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span data-i18n="open_tiktok">Buka Akun TikTok</span>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H8M17 7V16"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="scroll-block glass-card channel-box">
+            <div class="channel-top">
+              <img
+                src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+                alt="PN WhatsApp"
+                class="pn-logo-mark"
+              />
+              <span class="channel-tag">WHATSAPP GROUP</span>
+            </div>
+            <h3 class="reveal-text" data-i18n="c2_t">Grup Diskusi Utama PN</h3>
+            <p class="reveal-text" data-i18n="c2_d">
+              Tempat tanya jawab, diskusi teknis, berbagi insight, dan membangun koneksi antar-programmer secara langsung.
+            </p>
+            <a
+              href="https://chat.whatsapp.com/DOf8COYiTJu2BaARbvCs6g?s=cl&p=a&iam=2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-solid"
+            >
+              <span data-i18n="join_wa">Gabung Grup WhatsApp</span>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H8M17 7V16"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATURAN WAJIB GRUP -->
+    <section id="aturan" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="r_eye">ATURAN WAJIB GRUP</div>
+          <h2 class="reveal-text" data-i18n="r_title">Hal yang Wajib Dipatuhi Semua Anggota</h2>
+          <p class="reveal-text" data-i18n="r_sub">
+            Aturan ini dibuat agar grup tetap fokus, aman, dan tidak penuh gangguan.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="scroll-block glass-card rule-box">
+            <div class="rule-idx">01</div>
+            <div>
+              <h3 class="reveal-text" data-i18n="r1_t">Promosi Maksimal 1 Kali Sehari</h3>
+              <p class="reveal-text" data-i18n="r1_d">
+                Boleh promosi proyek, jasa, atau karya sendiri, tetapi maksimal 1 kali dalam 1 hari. Jangan membanjiri grup dengan promosi berulang.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card rule-box">
+            <div class="rule-idx">02</div>
+            <div>
+              <h3 class="reveal-text" data-i18n="r2_t">Tidak Boleh Spam</h3>
+              <p class="reveal-text" data-i18n="r2_d">
+                Dilarang mengirim pesan berulang, link tidak jelas, pesan berantai/forward tidak relevan, atau spam chat.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card rule-box">
+            <div class="rule-idx">03</div>
+            <div>
+              <h3 class="reveal-text" data-i18n="r3_t">Tidak Boleh Menambahkan AI ke Grup</h3>
+              <p class="reveal-text" data-i18n="r3_d">
+                Dilarang memasukkan bot AI atau akun AI apa pun ke dalam grup tanpa izin dari admin.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-block glass-card rule-box">
+            <div class="rule-idx">04</div>
+            <div>
+              <h3 class="reveal-text" data-i18n="r4_t">Dilarang Meminta DANA &amp; Transaksi Meragukan</h3>
+              <p class="reveal-text" data-i18n="r4_d">
+                Dilarang meminta uang/saldo DANA secara paksa, utang piutang tidak jelas, atau aktivitas apa pun yang mengarah ke penipuan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETIKA SINGKAT & PENUTUP -->
+    <section id="etika" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <div class="eyebrow reveal-text" data-i18n="e_eye">BUDAYA DISKUSI</div>
+          <h2 class="reveal-text" data-i18n="e_title">Cara Berdiskusi yang Enak di Grup</h2>
+          <p class="reveal-text" data-i18n="e_sub">
+            Kebiasaan kecil yang bikin semua anggota lebih mudah saling memahami.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="scroll-block glass-card">
+            <h3 class="reveal-text" data-i18n="e1_t">Langsung ke Inti Masalah</h3>
+            <p class="reveal-text" data-i18n="e1_d">
+              Hindari sekadar "bang mau tanya" lalu diam. Tuliskan langsung pertanyaan atau kendalamu agar bisa cepat direspons.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card">
+            <h3 class="reveal-text" data-i18n="e2_t">Hargai Waktu &amp; Proses</h3>
+            <p class="reveal-text" data-i18n="e2_d">
+              Setiap orang punya kesibukan dan jam kerja sendiri. Sabar menunggu jawaban dan hargai penjelasan yang diberikan.
+            </p>
+          </div>
+
+          <div class="scroll-block glass-card">
+            <h3 class="reveal-text" data-i18n="e3_t">Jaga Keamanan Sesama</h3>
+            <p class="reveal-text" data-i18n="e3_d">
+              Jangan membagikan data sensitif, kredensial, atau tautan berbahaya ke dalam grup.
+            </p>
+          </div>
+        </div>
+
+        <div class="scroll-block glass-card closing-cta">
+          <div class="closing-brand">
+            <img
+              src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+              alt="PN"
+              class="pn-logo-mark"
+            />
+            <strong>Programmer Nusantara | PN</strong>
+          </div>
+          <h2 class="reveal-text" data-i18n="close_t">Siap Masuk ke Grup &amp; Berdiskusi?</h2>
+          <p class="reveal-text" data-i18n="close_d">
+            Patuhi aturan utama (promosi maks 1x/hari, no spam, no tambah AI ke grup, no minta DANA/penipuan) dan bangun koneksi sehat sesama programmer.
+          </p>
+          <div class="hero-btns">
+            <a
+              href="https://chat.whatsapp.com/DOf8COYiTJu2BaARbvCs6g?s=cl&p=a&iam=2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-solid btn-lg"
+            >
+              <span data-i18n="join_wa">Gabung Grup WhatsApp</span>
+            </a>
+            <a
+              href="https://tiktok.com/@proggramer.nusantara"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline btn-lg"
+            >
+              <span>tiktok.com/@proggramer.nusantara</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img
+          src="https://cdn.imagetourls.com/uploads/tyImg/P6tTRp6L.png"
+          alt="PN"
+          class="pn-logo-mark"
+        />
+        <span>Programmer Nusantara | PN</span>
+      </div>
+      <div class="footer-right" data-i18n="footer_txt">
+        &copy; 2026 Programmer Nusantara | PN. Memahami Programmer.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
